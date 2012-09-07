@@ -334,6 +334,7 @@ public class Accounts : ArrayList<AAccount> {
 		account.stream_was_updated.connect(stream_update);
 		account.status_sent.connect((ac, ok, msg) => {
 			status_sent(ac, ok, msg);
+(stream_update);
 		});
 		account.message_indicate.connect((msg) => {
 			message_indicate(msg);
@@ -439,7 +440,7 @@ public class Accounts : ArrayList<AAccount> {
 		case MenuItems.REMOVE:
 			Gtk.MessageDialog dlg = new Gtk.MessageDialog(main_window, Gtk.DialogFlags.MODAL,
 				Gtk.MessageType.QUESTION, Gtk.ButtonsType.YES_NO,
-				"%s", _("Do you realy want to remove this account?"));
+				"%s", _("Do you really want to remove this account?"));
 			
 			int result = dlg.run();
 			dlg.close();
