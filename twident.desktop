@@ -10,6 +10,7 @@ Categories=GTK;Network;InstantMessaging;
 Comment=Fast, easy, and free Twitter and Identi.ca client
 Comment[ua]=Швидкий, простий та вільний Twitter клієнт
 Comment[ru]=Быстрый, простой и свободный Twitter клиент
+Comment[nl]=Snelle, simpele en gratis Twitter- en Identi.ca-client
 GenericName=Twitter Client
 GenericName[ua]=Twident
 GenericName[ru]=Twident
