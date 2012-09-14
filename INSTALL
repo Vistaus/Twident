@@ -19,14 +19,13 @@ You must install dev-packages for this libraries to build Twident.
 Building Twident
 =======================
 
-Twident uses a WAF build system. To build and install Twident use this commands:
+Twident uses the autotools build system. To build and install Twident use this commands:
 
-    ./waf configure --prefix=/usr
-    ./waf build
-    sudo ./waf install
+    ./autogen.bash
+    ./configure
+    make            (note: if you have multiple cores you can specify them with the -j parameter; for example, if you have dual core use -j2 as a parameter)
+    sudo make install
 
 For uninstalling type this:
 
-    sudo ./waf uninstall
-
-Visit http://code.google.com/p/waf/ for more information.
+    sudo make uninstall

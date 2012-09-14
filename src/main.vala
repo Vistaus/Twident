@@ -5,7 +5,7 @@ using Cairo;
 public class TestWindow : Window {
 	
 	public TestWindow() {
-		set_default_size(300, 200);
+		set_default_size(300, 300);
 		/*
 		Status status1 = new Status();
 		status1.content = """This is a Vala port of the famous Egg Clock sample <a href="somelink"><b>@widget</b></a> using Cairo and GTK+ as <a href="link:action"><b>described</b></a> in the GNOME Journal: Part 1 and part 2""";
